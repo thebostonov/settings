@@ -7,7 +7,7 @@ const languageDesc = document.querySelector(".language-desc");
 
 accLinks.forEach(function (accLink) {
   accLink.addEventListener("click", function (e) {
-    const accId = e.target.dataset.id;
+    const accId = e.currentTarget.dataset.id;
     if (accId == "personal") {
       passworDesc.classList.add("d-none");
       contactDesc.classList.add("d-none");
