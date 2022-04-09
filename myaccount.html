@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroMyAccout</title>
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="myacc.css" />
+  </head>
+  <body>
+    <header class="acc-header">
+      <i class="fa-solid fa-gear"></i>
+      <h1 class="acc-header-heading">Sozlamalar</h1>
+    </header>
+    <section class="account">
+      <div class="acc-container">
+        <div class="acc-nav">
+          <h1 class="acc-nav-heading">Hisob</h1>
+          <ul class="acc-list">
+            <li class="acc-item">
+              <a href="#" class="acc-link" data-id="personal"
+                >Shaxsiy ma’lumot</a
+              >
+            </li>
+            <li class="acc-item">
+              <a href="#" class="acc-link" data-id="password">Parol</a>
+            </li>
+            <li class="acc-item">
+              <a href="#" class="acc-link" data-id="language"
+                >Til Sozlamalari</a
+              >
+            </li>
+            <li class="acc-item">
+              <a href="#" class="acc-link" data-id="contact">Bog'lanish</a>
+            </li>
+          </ul>
+        </div>
+        <div class="acc-settings">
+          <div class="personal-desc">
+            <div class="main-info main-container">
+              <h1 class="main-info-heading">Personal Information</h1>
+              <div class="info-wrapper">
+                <div class="info-avatar"></div>
+                <div class="info-person">
+                  <div class="mb-3 w-100">
+                    <input
+                      type="text"
+                      class="form-control info-input"
+                      id="name"
+                      placeholder="Name"
+                      value="Zokirbek"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="mb-3 w-100">
+                    <input
+                      type="text"
+                      class="form-control info-input"
+                      id="surname"
+                      placeholder="Surname"
+                      value="Qadirberdiyev"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 w-100">
+                <input
+                  type="email"
+                  class="form-control info-input"
+                  placeholder="Email"
+                  value="zqodirberdiyev@gmail.com"
+                />
+              </div>
+              <p class="info-input-desc">Enter your new email address below</p>
+              <div class="mb-3 w-100">
+                <input
+                  type="email"
+                  class="form-control info-input"
+                  placeholder="New Email"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control info-input"
+                  placeholder="New Password"
+                />
+              </div>
+              <div class="info-phone">
+                <div class="mb-3 info-phone-input">
+                  <div class="info-country"></div>
+                  <input
+                    type="tel"
+                    class="form-control info-input"
+                    placeholder="Phone number"
+                  />
+                </div>
+                <button type="button" class="btn info-btn">Send Code</button>
+              </div>
+              <span class="info-rem">
+                <i
+                  class="fa-solid fa-circle-exclamation"
+                  style="color: #119649"
+                ></i>
+                <p>
+                  A one-time verification code will be sent to your mobile
+                  device.
+                </p>
+              </span>
+            </div>
+            <div class="info-buttons">
+              <button class="info-button">Cancel</button>
+              <button class="info-button">Save</button>
+            </div>
+          </div>
+          <div class="password-desc d-none">
+            <div class="main-info main-container">
+              <h1 class="main-info-heading">Change Password</h1>
+              <form action="https://echo.htmlacademy.ru/courses" method="post">
+                <div class="mb-3">
+                  <label for="oldPassword" class="form-label"
+                    >Old Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control info-input"
+                    id="oldPassword"
+                    name="old_password"
+                    placeholder="Old password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="newPassword" class="form-label"
+                    >New Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control info-input"
+                    id="newPassword"
+                    name="new_password"
+                    placeholder="New Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control info-input"
+                    id="confirmPassword"
+                    name="confirm_password"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="info-buttons">
+              <button class="info-button">Cancel</button>
+              <button type="button" class="info-button">Save</button>
+            </div>
+          </div>
+          <div class="contact-desc d-none">
+            <div class="main-info main-container contact">
+              <h1 class="main-info-heading">Contact Us</h1>
+              <div class="contact-wrapper">
+                <div class="dev-info-wrapper">
+                  <div class="contact-dev">
+                    <div class="dev-img"></div>
+                    <div class="contact-links">
+                      <a class="contact-link" href="https://t.me/thebostons"
+                        ><i class="fa-brands fa-telegram"></i> Telegram'ga
+                        bog'lanish</a
+                      >
+                      <a
+                        class="contact-link"
+                        href="mailto: zqodirberdiyev@gmail.com"
+                        ><i class="fa-solid fa-envelope"></i> Email'ga
+                        bog'lanish</a
+                      >
+                      <a class="contact-link" href="tel: +998995655507"
+                        ><i class="fa-solid fa-phone"></i> Telefoniga
+                        bog'lanish</a
+                      >
+                    </div>
+                  </div>
+                  <div class="dev-info">
+                    <p class="dev-info-desc">
+                      <span>Front-end Developer:</span> Zokirbek Qadirberdiyev
+                      <br />
+                      Sayt dizayni va stillari bo'yicha murojat qiling
+                    </p>
+                  </div>
+                </div>
+                <div class="dev-info-wrapper">
+                  <div class="contact-dev">
+                    <div class="dev-img other-pic"></div>
+                    <div class="contact-links">
+                      <a
+                        class="contact-link"
+                        href="https://t.me/musojonmaqsudov"
+                        ><i class="fa-brands fa-telegram"></i> Telegram'ga
+                        bog'lanish</a
+                      >
+                      <a
+                        class="contact-link"
+                        href="mailto: maqsudovmusojon@gmail.com"
+                        ><i class="fa-solid fa-envelope"></i> Email'ga
+                        bog'lanish</a
+                      >
+                      <a class="contact-link" href="tel: +998932870327"
+                        ><i class="fa-solid fa-phone"></i> Telefoniga
+                        bog'lanish</a
+                      >
+                    </div>
+                  </div>
+                  <div class="dev-info">
+                    <p class="dev-info-desc">
+                      <span>Back-end Developer:</span> Musojon Maqsudov
+                      <br />
+                      Sayt back-end va server bo'yicha murojat qiling
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="language-desc d-none">
+            <div class="main-info main-container">
+              <h1 class="main-info-heading">Language Preference</h1>
+              <select
+                class="form-select form-select-lg mb-3 info-select"
+                aria-label=".form-select-lg example"
+              >
+                <option selected disabled>Select Language</option>
+                <option value="1">Russian</option>
+                <option value="2">Uzbek</option>
+                <option value="3">English</option>
+              </select>
+            </div>
+            <div class="info-buttons">
+              <button class="info-button">Cancel</button>
+              <button type="button" class="info-button">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="myacc.js"></script>
+  </body>
+</html>
